@@ -2,14 +2,12 @@ pub struct Solution;
 
 impl Solution {
     pub fn remove_duplicates(nums: &mut [i32]) -> usize {
-        let (mut i, mut j) = (0, 0);
-        while i < nums.len() {
+        let mut j = 0;
+        for i in 0..nums.len() {
             if i == 0 || nums[i - 1] != nums[i] {
                 nums[j] = nums[i];
                 j += 1;
             }
-
-            i += 1;
         }
 
         j
