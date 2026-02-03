@@ -36,8 +36,6 @@ mod tests {
 
             let result = Solution::remove_duplicates(&mut nums);
 
-            dbg!(&nums);
-
             assert_eq!(result, expected_result);
             assert_eq!(&nums[..expected_result], expected_nums);
         }
