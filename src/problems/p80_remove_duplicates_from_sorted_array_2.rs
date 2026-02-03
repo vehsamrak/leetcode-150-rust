@@ -1,0 +1,45 @@
+pub struct Solution;
+
+impl Solution {
+    pub fn remove_duplicates(nums: &mut [i32]) -> usize {
+        let mut j = 0;
+        for i in 0..nums.len() {
+            if j < 2 || nums[i] != nums[j - 2] {
+                nums[j] = nums[i];
+                j += 1;
+            }
+        }
+
+        j
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn remove_element() {
+        let test_cases = [
+            (vec![1, 1, 1, 2, 2, 3], 5, vec![1, 1, 2, 2, 3]),
+            (
+                vec![0, 0, 1, 1, 1, 1, 2, 3, 3],
+                7,
+                vec![0, 0, 1, 1, 2, 3, 3],
+            ),
+        ];
+
+        for test_case in test_cases {
+            let mut nums = test_case.0;
+            let expected_result = test_case.1 as usize;
+            let expected_nums = test_case.2;
+
+            let result = Solution::remove_duplicates(&mut nums);
+
+            dbg!(&nums);
+
+            assert_eq!(result, expected_result);
+            assert_eq!(&nums[..expected_result], expected_nums);
+        }
+    }
+}
