@@ -36,8 +36,8 @@ mod tests {
 
             let result = Solution::remove_duplicates(&mut nums);
 
-            assert_eq!(result, expected_result);
-            assert_eq!(&nums[..expected_result], expected_nums);
+            assert_eq!(expected_result, result);
+            assert_eq!(expected_nums, &nums[..expected_result]);
         }
     }
 }

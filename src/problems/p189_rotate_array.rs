@@ -28,7 +28,7 @@ mod tests {
 
             Solution::rotate(&mut nums, k);
 
-            assert_eq!(nums, expected_nums);
+            assert_eq!(expected_nums, nums);
         }
     }
 }

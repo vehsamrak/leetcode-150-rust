@@ -41,9 +41,9 @@ mod tests {
             let k = Solution::remove_element(&mut nums, val);
 
             for i in nums.iter().take(k) {
-                assert_ne!(i, &val);
+                assert_ne!(&val, i);
             }
-            assert_eq!(k, expected_k);
+            assert_eq!(expected_k, k);
         }
     }
 }
