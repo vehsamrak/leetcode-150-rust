@@ -1,4 +1,5 @@
 pub mod p121_best_time_to_buy_and_sell_stock;
+pub mod p122_best_time_to_buy_and_sell_stock_ii;
 pub mod p189_rotate_array;
 pub mod p26_remove_duplicates_from_sorted_array;
 pub mod p27_remove_element;
