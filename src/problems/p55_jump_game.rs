@@ -4,7 +4,7 @@ impl Solution {
     pub fn can_jump(nums: Vec<i32>) -> bool {
         let mut max_distance = 0;
 
-        for (i, num) in nums
+        for (i, &num) in nums
             .iter()
             .enumerate()
         {
@@ -12,7 +12,7 @@ impl Solution {
                 return false;
             }
 
-            max_distance = max_distance.max(i + *num as usize);
+            max_distance = max_distance.max(i + num as usize);
         }
 
         true
