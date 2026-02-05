@@ -21,7 +21,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn merge_test() {
+    fn test() {
         let test_cases = [
             (
                 vec![1, 2, 3, 0, 0, 0],

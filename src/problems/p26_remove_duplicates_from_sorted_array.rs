@@ -19,7 +19,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn remove_element() {
+    fn test() {
         let test_cases = [
             (vec![1, 1, 2], 2, vec![1, 2]),
             (vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4], 5, vec![0, 1, 2, 3, 4]),
