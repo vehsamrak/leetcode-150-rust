@@ -4,5 +4,6 @@ pub mod p169_majority_element;
 pub mod p189_rotate_array;
 pub mod p26_remove_duplicates_from_sorted_array;
 pub mod p27_remove_element;
+pub mod p55_jump_game;
 pub mod p80_remove_duplicates_from_sorted_array_2;
 pub mod p88_merge_sorted_array;
