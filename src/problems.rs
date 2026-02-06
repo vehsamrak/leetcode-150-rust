@@ -4,6 +4,7 @@ pub mod p13_roman_to_integer;
 pub mod p169_majority_element;
 pub mod p189_rotate_array;
 pub mod p26_remove_duplicates_from_sorted_array;
+pub mod p274_h_index;
 pub mod p27_remove_element;
 pub mod p45_jump_game_ii;
 pub mod p55_jump_game;
