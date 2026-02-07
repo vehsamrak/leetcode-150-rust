@@ -3,6 +3,7 @@ pub mod p122_best_time_to_buy_and_sell_stock_ii;
 pub mod p13_roman_to_integer;
 pub mod p169_majority_element;
 pub mod p189_rotate_array;
+pub mod p238_product_of_array_except_self;
 pub mod p26_remove_duplicates_from_sorted_array;
 pub mod p274_h_index;
 pub mod p27_remove_element;
