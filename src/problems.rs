@@ -9,5 +9,6 @@ pub mod p274_h_index;
 pub mod p27_remove_element;
 pub mod p45_jump_game_ii;
 pub mod p55_jump_game;
+pub mod p58_length_of_last_word;
 pub mod p80_remove_duplicates_from_sorted_array_2;
 pub mod p88_merge_sorted_array;
