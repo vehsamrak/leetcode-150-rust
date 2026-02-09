@@ -4,10 +4,7 @@ impl Solution {
     pub fn can_jump(nums: Vec<i32>) -> bool {
         let mut max_distance = 0;
 
-        for (i, &num) in nums
-            .iter()
-            .enumerate()
-        {
+        for (i, &num) in nums.iter().enumerate() {
             if i > max_distance {
                 return false;
             }

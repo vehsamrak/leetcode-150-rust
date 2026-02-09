@@ -25,9 +25,7 @@ mod tests {
         ];
 
         for test_case in test_cases {
-            let input = test_case
-                .0
-                .to_string();
+            let input = test_case.0.to_string();
             let expected = test_case.1;
 
             let result = Solution::length_of_last_word(input);

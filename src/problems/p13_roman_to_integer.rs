@@ -38,9 +38,7 @@ mod tests {
         let test_cases = [("III", 3), ("LVIII", 58), ("MCMXCIV", 1994)];
 
         for test_case in test_cases {
-            let s = test_case
-                .0
-                .to_string();
+            let s = test_case.0.to_string();
             let expected = test_case.1;
 
             let result = Solution::roman_to_int(s);
