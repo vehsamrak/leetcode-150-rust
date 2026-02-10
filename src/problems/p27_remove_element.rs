@@ -29,14 +29,12 @@ mod tests {
     #[test]
     fn test() {
         let test_cases = [
-            (vec![3, 2, 2, 3], 3, 2, vec![2, 2]),
-            (vec![0, 1, 2, 2, 3, 0, 4, 2], 2, 5, vec![0, 1, 3, 0, 4]),
+            (vec![3, 2, 2, 3], 3, 2),
+            (vec![0, 1, 2, 2, 3, 0, 4, 2], 2, 5),
         ];
 
         for test_case in test_cases {
-            let mut nums = test_case.0;
-            let val = test_case.1;
-            let expected_k = test_case.2;
+            let (mut nums, val, expected_k) = test_case;
 
             let k = Solution::remove_element(&mut nums, val);
 

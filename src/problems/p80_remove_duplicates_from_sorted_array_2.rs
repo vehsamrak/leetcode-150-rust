@@ -30,9 +30,7 @@ mod tests {
         ];
 
         for test_case in test_cases {
-            let mut nums = test_case.0;
-            let expected_result = test_case.1 as usize;
-            let expected_nums = test_case.2;
+            let (mut nums, expected_result, expected_nums) = test_case;
 
             let result = Solution::remove_duplicates(&mut nums);
 

@@ -42,11 +42,7 @@ mod tests {
         ];
 
         for test_case in test_cases {
-            let mut nums1 = test_case.0;
-            let m = test_case.1;
-            let mut nums2 = test_case.2;
-            let n = test_case.3;
-            let expected = test_case.4;
+            let (mut nums1, m, mut nums2, n, expected) = test_case;
 
             Solution::merge(&mut nums1, m, &mut nums2, n);
 

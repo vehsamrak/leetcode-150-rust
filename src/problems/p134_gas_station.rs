@@ -34,9 +34,7 @@ mod tests {
         ];
 
         for test_case in test_cases {
-            let gas = test_case.0;
-            let cost = test_case.1;
-            let expected = test_case.2;
+            let (gas, cost, expected) = test_case;
 
             let result = Solution::can_complete_circuit(gas, cost);
 

@@ -35,8 +35,7 @@ mod tests {
         ];
 
         for test_case in test_cases {
-            let prices = test_case.0;
-            let expected = test_case.1;
+            let (prices, expected) = test_case;
 
             let result = Solution::max_profit(prices.clone());
             let result2 = Solution::max_profit_2(prices);

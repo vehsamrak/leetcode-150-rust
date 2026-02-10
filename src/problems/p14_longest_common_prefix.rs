@@ -27,14 +27,14 @@ mod tests {
         ];
 
         for test_case in test_cases {
-            let input = test_case
-                .0
-                .into_iter()
-                .map(String::from)
-                .collect();
-            let expected = test_case.1;
+            let (input, expected) = test_case;
 
-            let result = Solution::longest_common_prefix(input);
+            let result = Solution::longest_common_prefix(
+                input
+                    .into_iter()
+                    .map(String::from)
+                    .collect(),
+            );
 
             assert_eq!(expected, result);
         }

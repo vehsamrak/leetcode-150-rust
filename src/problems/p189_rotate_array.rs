@@ -22,9 +22,7 @@ mod tests {
         ];
 
         for test_case in test_cases {
-            let mut nums = test_case.0;
-            let k = test_case.1;
-            let expected_nums = test_case.2;
+            let (mut nums, k, expected_nums) = test_case;
 
             Solution::rotate(&mut nums, k);
 

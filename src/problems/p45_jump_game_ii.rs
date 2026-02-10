@@ -32,8 +32,7 @@ mod tests {
         let test_cases = [(vec![2, 3, 1, 1, 4], 2), (vec![2, 3, 0, 1, 4], 2)];
 
         for test_case in test_cases {
-            let nums = test_case.0;
-            let expected = test_case.1;
+            let (nums, expected) = test_case;
 
             let result = Solution::jump(nums);
 

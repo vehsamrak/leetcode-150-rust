@@ -30,8 +30,7 @@ mod tests {
         ];
 
         for test_case in test_cases {
-            let input = test_case.0;
-            let expected = test_case.1;
+            let (input, expected) = test_case;
 
             let result = Solution::product_except_self(input);
 

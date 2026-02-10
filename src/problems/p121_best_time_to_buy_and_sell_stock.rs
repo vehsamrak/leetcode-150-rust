@@ -23,8 +23,7 @@ mod tests {
         let test_cases = [(vec![7, 1, 5, 3, 6, 4], 5), (vec![7, 6, 4, 3, 1], 0)];
 
         for test_case in test_cases {
-            let prices = test_case.0;
-            let expected = test_case.1;
+            let (prices, expected) = test_case;
 
             let result = Solution::max_profit(prices);
 

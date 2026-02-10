@@ -34,8 +34,7 @@ mod tests {
         let test_cases = [(vec![3, 0, 6, 1, 5], 3), (vec![1, 3, 1], 1)];
 
         for test_case in test_cases {
-            let input = test_case.0;
-            let expected = test_case.1;
+            let (input, expected) = test_case;
 
             let result = Solution::h_index(input);
 
