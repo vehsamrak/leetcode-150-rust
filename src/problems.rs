@@ -5,6 +5,7 @@ pub mod p134_gas_station;
 pub mod p135_candy;
 pub mod p13_roman_to_integer;
 pub mod p14_longest_common_prefix;
+pub mod p151_reverse_words_in_a_string;
 pub mod p169_majority_element;
 pub mod p189_rotate_array;
 pub mod p238_product_of_array_except_self;
