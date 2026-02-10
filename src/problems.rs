@@ -1,6 +1,7 @@
 pub mod p121_best_time_to_buy_and_sell_stock;
 pub mod p122_best_time_to_buy_and_sell_stock_ii;
 pub mod p134_gas_station;
+pub mod p135_candy;
 pub mod p13_roman_to_integer;
 pub mod p14_longest_common_prefix;
 pub mod p169_majority_element;
