@@ -12,6 +12,7 @@ pub mod p238_product_of_array_except_self;
 pub mod p26_remove_duplicates_from_sorted_array;
 pub mod p274_h_index;
 pub mod p27_remove_element;
+pub mod p28_index_of_first_occurrence_in_string;
 pub mod p380_insert_delete_get_random;
 pub mod p42_trapping_rain_water;
 pub mod p45_jump_game_ii;
