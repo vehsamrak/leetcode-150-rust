@@ -13,6 +13,7 @@ pub mod p26_remove_duplicates_from_sorted_array;
 pub mod p274_h_index;
 pub mod p27_remove_element;
 pub mod p380_insert_delete_get_random;
+pub mod p42_trapping_rain_water;
 pub mod p45_jump_game_ii;
 pub mod p55_jump_game;
 pub mod p58_length_of_last_word;
