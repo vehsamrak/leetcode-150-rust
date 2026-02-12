@@ -18,5 +18,6 @@ pub mod p42_trapping_rain_water;
 pub mod p45_jump_game_ii;
 pub mod p55_jump_game;
 pub mod p58_length_of_last_word;
+pub mod p6_zigzag_conversion;
 pub mod p80_remove_duplicates_from_sorted_array_2;
 pub mod p88_merge_sorted_array;
