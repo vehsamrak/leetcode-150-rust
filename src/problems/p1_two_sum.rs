@@ -6,10 +6,11 @@ impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         let mut map: HashMap<i32, usize> = HashMap::new();
         for (i, num) in nums.iter().enumerate() {
-            match map.get(num) {
-                Some(&j) => return vec![j as i32, i as i32],
-                None => map.insert(target - num, i),
-            };
+            if let Some(&j) = map.get(num) {
+                return vec![j as i32, i as i32];
+            }
+
+            map.insert(target - num, i);
         }
 
         vec![]
