@@ -10,6 +10,7 @@ pub mod p151_reverse_words_in_a_string;
 pub mod p169_majority_element;
 pub mod p189_rotate_array;
 pub mod p1_two_sum;
+pub mod p219_contains_duplicate_ii;
 pub mod p238_product_of_array_except_self;
 pub mod p242_valid_anagram;
 pub mod p26_remove_duplicates_from_sorted_array;
