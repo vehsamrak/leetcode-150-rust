@@ -29,3 +29,4 @@ pub mod p58_length_of_last_word;
 pub mod p6_zigzag_conversion;
 pub mod p80_remove_duplicates_from_sorted_array_2;
 pub mod p88_merge_sorted_array;
+pub mod p9_palindrome_number;
