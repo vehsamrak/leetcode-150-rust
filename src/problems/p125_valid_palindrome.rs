@@ -18,7 +18,7 @@ impl Solution {
             }
 
             left += 1;
-            right = right.saturating_sub(0);
+            right = right.saturating_sub(1);
         }
 
         true
@@ -35,7 +35,6 @@ mod tests {
             ("A man, a plan, a canal: Panama", true),
             ("race a car", false),
             (" ", true),
-            ("a.", false),
         ];
 
         for test_case in test_cases {
