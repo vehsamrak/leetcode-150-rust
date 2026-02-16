@@ -3,7 +3,29 @@ use std::collections::HashMap;
 pub struct Solution;
 
 impl Solution {
+    // last occurrence approach
     pub fn is_isomorphic(s: String, t: String) -> bool {
+        let (s, t) = (s.as_bytes(), t.as_bytes());
+        let mut first_occurrences_s = [0usize; 256];
+        let mut first_occurrences_t = [0usize; 256];
+
+        for i in 0..s.len() {
+            let s_letter = s[i] as usize;
+            let t_letter = t[i] as usize;
+
+            if first_occurrences_s[s_letter] != first_occurrences_t[t_letter] {
+                return false;
+            }
+
+            first_occurrences_s[s_letter] = i + 1;
+            first_occurrences_t[t_letter] = i + 1;
+        }
+
+        true
+    }
+
+    // two hash maps approach
+    pub fn is_isomorphic_two_maps(s: String, t: String) -> bool {
         let length = s.len();
         let s = s.as_bytes();
         let t = t.as_bytes();
@@ -12,8 +34,8 @@ impl Solution {
             HashMap::<u8, u8>::with_capacity(length),
             HashMap::<u8, u8>::with_capacity(length),
         );
-        for i in 0..length {
-            let (s_letter, t_letter) = (s[i], t[i]);
+
+        for (&s_letter, &t_letter) in s.iter().zip(t.iter()) {
             if let Some(&letter) = s_map.get(&s_letter)
                 && letter != t_letter
             {
@@ -51,7 +73,9 @@ mod tests {
             let (s, t, expected) = dbg!(test_case);
 
             let result = Solution::is_isomorphic(s.to_string(), t.to_string());
+            assert_eq!(expected, result);
 
+            let result = Solution::is_isomorphic_two_maps(s.to_string(), t.to_string());
             assert_eq!(expected, result);
         }
     }
