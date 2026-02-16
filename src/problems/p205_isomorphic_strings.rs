@@ -6,19 +6,19 @@ impl Solution {
     // last occurrence approach
     pub fn is_isomorphic(s: String, t: String) -> bool {
         let (s, t) = (s.as_bytes(), t.as_bytes());
-        let mut first_occurrences_s = [0usize; 256];
-        let mut first_occurrences_t = [0usize; 256];
+        let mut last_occurrences_s = [0usize; 256];
+        let mut last_occurrences_t = [0usize; 256];
 
         for i in 0..s.len() {
             let s_letter = s[i] as usize;
             let t_letter = t[i] as usize;
 
-            if first_occurrences_s[s_letter] != first_occurrences_t[t_letter] {
+            if last_occurrences_s[s_letter] != last_occurrences_t[t_letter] {
                 return false;
             }
 
-            first_occurrences_s[s_letter] = i + 1;
-            first_occurrences_t[t_letter] = i + 1;
+            last_occurrences_s[s_letter] = i + 1;
+            last_occurrences_t[t_letter] = i + 1;
         }
 
         true
