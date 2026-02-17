@@ -21,6 +21,7 @@ pub mod p26_remove_duplicates_from_sorted_array;
 pub mod p274_h_index;
 pub mod p27_remove_element;
 pub mod p28_index_of_first_occurrence_in_string;
+pub mod p290_word_pattern;
 pub mod p380_insert_delete_get_random;
 pub mod p383_ransom_note;
 pub mod p392_is_subsequence;
