@@ -13,6 +13,7 @@ pub mod p167_two_sum_ii_input_array_is_sorted;
 pub mod p169_majority_element;
 pub mod p189_rotate_array;
 pub mod p1_two_sum;
+pub mod p202_happy_number;
 pub mod p205_isomorphic_strings;
 pub mod p219_contains_duplicate_ii;
 pub mod p238_product_of_array_except_self;
