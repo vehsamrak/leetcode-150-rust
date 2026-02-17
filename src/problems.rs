@@ -28,6 +28,7 @@ pub mod p383_ransom_note;
 pub mod p392_is_subsequence;
 pub mod p42_trapping_rain_water;
 pub mod p45_jump_game_ii;
+pub mod p49_group_anagrams;
 pub mod p55_jump_game;
 pub mod p58_length_of_last_word;
 pub mod p6_zigzag_conversion;
