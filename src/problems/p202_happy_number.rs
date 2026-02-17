@@ -33,22 +33,22 @@ impl Solution {
     // solution with hash set
     pub fn is_happy_hashset(number: i32) -> bool {
         let mut seen: HashSet<i32> = HashSet::new();
-        let mut n = number;
+        let mut number = number;
 
-        while n != 1 {
-            if seen.contains(&n) {
+        while number != 1 {
+            if seen.contains(&number) {
                 return false;
             }
 
-            seen.insert(n);
+            seen.insert(number);
 
             let mut sum = 0;
-            while n > 0 {
-                sum += (n % 10).pow(2);
-                n /= 10;
+            while number > 0 {
+                sum += (number % 10).pow(2);
+                number /= 10;
             }
 
-            n = sum;
+            number = sum;
         }
 
         true
