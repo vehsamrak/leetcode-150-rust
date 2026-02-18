@@ -15,6 +15,7 @@ pub mod p189_rotate_array;
 pub mod p1_two_sum;
 pub mod p202_happy_number;
 pub mod p205_isomorphic_strings;
+pub mod p20_valid_parentheses;
 pub mod p219_contains_duplicate_ii;
 pub mod p238_product_of_array_except_self;
 pub mod p242_valid_anagram;
