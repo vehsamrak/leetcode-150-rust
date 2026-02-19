@@ -7,6 +7,7 @@ pub mod p134_gas_station;
 pub mod p135_candy;
 pub mod p13_roman_to_integer;
 pub mod p14_longest_common_prefix;
+pub mod p150_evaluate_reverse_polish_notation;
 pub mod p151_reverse_words_in_a_string;
 pub mod p155_min_stack;
 pub mod p15_3sum;
