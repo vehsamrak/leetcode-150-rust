@@ -2,6 +2,7 @@ pub mod p11_container_with_most_water;
 pub mod p121_best_time_to_buy_and_sell_stock;
 pub mod p122_best_time_to_buy_and_sell_stock_ii;
 pub mod p125_valid_palindrome;
+pub mod p128_longest_consecutive_sequence;
 pub mod p12_integer_to_roman;
 pub mod p134_gas_station;
 pub mod p135_candy;
