@@ -21,17 +21,17 @@ impl Solution {
         let mut result = ListNode::new(0);
         let mut tail = &mut result;
         while left.is_some() && right.is_some() {
-            if left.as_ref().unwrap().val < right.as_ref().unwrap().val {
-                let mut node = left.take().unwrap();
+            if left.as_ref()?.val < right.as_ref()?.val {
+                let mut node = left.take()?;
                 left = node.next.take();
                 tail.next = Some(node);
             } else {
-                let mut node = right.take().unwrap();
+                let mut node = right.take()?;
                 right = node.next.take();
                 tail.next = Some(node);
             }
 
-            tail = tail.next.as_mut().unwrap();
+            tail = tail.next.as_mut()?;
         }
 
         if left.is_some() {
