@@ -46,7 +46,7 @@ mod tests {
 
             Solution::merge(&mut nums1, m, &mut nums2, n);
 
-            assert_eq!(nums1, expected);
+            assert_eq!(expected, nums1);
         }
     }
 }
