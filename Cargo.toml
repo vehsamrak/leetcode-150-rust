@@ -4,6 +4,6 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-rand = "0.8.5"
+rand = "0.8.5" # this version is forced by leetcode
 
 [dev-dependencies]
