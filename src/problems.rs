@@ -15,6 +15,7 @@ pub mod p155_min_stack;
 pub mod p15_3sum;
 pub mod p167_two_sum_ii_input_array_is_sorted;
 pub mod p169_majority_element;
+pub mod p172_factorial_trailing_zeroes;
 pub mod p189_rotate_array;
 pub mod p1_two_sum;
 pub mod p202_happy_number;
