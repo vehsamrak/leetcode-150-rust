@@ -24,6 +24,7 @@ pub mod p205_isomorphic_strings;
 pub mod p20_valid_parentheses;
 pub mod p219_contains_duplicate_ii;
 pub mod p21_merge_two_sorted_lists;
+pub mod p36_valid_sudoku;
 pub mod p238_product_of_array_except_self;
 pub mod p242_valid_anagram;
 pub mod p26_remove_duplicates_from_sorted_array;
