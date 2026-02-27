@@ -7,6 +7,7 @@ pub mod p128_longest_consecutive_sequence;
 pub mod p12_integer_to_roman;
 pub mod p134_gas_station;
 pub mod p135_candy;
+pub mod p138_copy_list_with_random_pointer;
 pub mod p13_roman_to_integer;
 pub mod p14_longest_common_prefix;
 pub mod p150_evaluate_reverse_polish_notation;
