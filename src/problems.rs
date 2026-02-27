@@ -43,6 +43,7 @@ pub mod p49_group_anagrams;
 pub mod p55_jump_game;
 pub mod p58_length_of_last_word;
 pub mod p66_plus_one;
+pub mod p67_add_binary;
 pub mod p68_text_justification;
 pub mod p6_zigzag_conversion;
 pub mod p71_simplify_path;
